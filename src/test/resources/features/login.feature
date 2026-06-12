@@ -7,7 +7,7 @@ Feature: User login
   Scenario: User logs in successfully
     Given a user exists with username "carla" and password "secret"
     When the user logs in with username "carla" and password "secret"
-    Then an error is returned
+    Then login is successful
     And the user is redirected to the home page
 
   Scenario: Login fails with wrong password
